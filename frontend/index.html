@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Blog</title>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="https://unpkg.com/feather-icons/dist/feather.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Blog</h1>
+        <button id="newPostBtn" class="btn">New Post</button>
+        <div id="postForm" style="display: none;">
+            <input type="text" id="postTitle" placeholder="Title" required>
+            <input type="text" id="postAuthor" placeholder="Author" required>
+            <div id="editor"></div>
+            <button id="submitPost" class="btn">Submit Post</button>
+        </div>
+        <div id="posts"></div>
+    </div>
+    <div id="loadingSpinner" class="spinner" style="display: none;">
+        <i data-feather="loader"></i>
+    </div>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
